@@ -1,0 +1,21 @@
+.welcome_screen{
+	background-image: url('/assets/img/busyconsumers.jpg');
+	background-size: cover;
+	background-position: center center;
+	opacity: 0.4;
+}
+
+.title{
+	color: black;
+	bottom: 420px;
+	left: 565px;
+	position: relative;
+}
+
+h1{
+	opacity: 1;
+}
+
+p{
+	color: black;
+}

@@ -1,0 +1,19 @@
+button{
+	background-color: gold;
+}
+
+.error_state{
+	color: red;
+}
+
+h1{
+	text-align: left;
+	color: white;
+	text-indent: 130px;
+
+}
+
+.backgrounder{
+	background-color: seagreen;
+	height: 55px;
+}

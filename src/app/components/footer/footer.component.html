@@ -1,0 +1,15 @@
+<div class="footer">
+  <div class="container content has-text-centered">
+    <p>&copy; 2022 Sleeping Companies, Inc.  All rights reserved.</p>
+    <p>Made with Itemizer</p>
+  </div>
+
+  <div *ngIf="users">
+
+    <div *ngFor="let user of users | async">
+      {{ user.login }} and {{ number }} more users are online right now!
+    </div>
+    
+  </div>
+  
+</div>

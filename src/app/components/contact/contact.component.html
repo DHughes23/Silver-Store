@@ -1,0 +1,44 @@
+<section>
+	<div>
+		<h1 class="title backgrounder">Contact Us</h1>
+	</div>
+
+	<div class="section container">
+		<form (ngSubmit) = "submitForm()" #contactForm="ngForm">
+			<div class="field">
+				<label for="name" class="label">Name: </label>
+				<input type="text" name="name" class="input" [(ngModel)]="name" #nameInput = "ngModel" required><br><br>
+
+				<div class="help error_state" *ngIf="nameInput.invalid && nameInput.touched">
+					Your name is required.
+				</div>
+
+			</div>
+
+			<div class="field">
+				<label for="email" class="label">Email Address: </label>
+				<input type="email" name="email" class="input" [(ngModel)]="email" #emailInput = "ngModel" email required><br><br>
+
+				<div class="help error_state" *ngIf="emailInput.invalid && emailInput.touched">
+					Your valid email address is required.
+				</div>
+			</div>
+
+			<div class="field">
+				<label for="req_num" class="label">Request Number: </label>
+				<input type="text" name="req_num" class="input" [(ngModel)]="req_num" #reqInput = "ngModel" required><br><br>
+
+				<div class="help error_state" *ngIf="reqInput.invalid && reqInput.touched">
+					Your request number is required.
+				</div>
+			</div>
+
+			<div class="field">
+				<label for="message" class="label">Message: </label>
+				<textarea name="message" class="textarea" [(ngModel)]="message"></textarea><br><br>
+			</div>
+
+			<button type="submit" class="button is-large" [disabled]="contactForm.invalid">Submit</button>	
+		</form>
+	</div>
+</section>
